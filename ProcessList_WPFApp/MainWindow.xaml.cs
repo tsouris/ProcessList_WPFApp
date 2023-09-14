@@ -1,7 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Diagnostics;
+using System.Threading.Tasks;
 using System.Windows;
+using System.Windows.Controls.Primitives;
 using System.Windows.Threading;
 
 namespace ProcessList_WPFApp
@@ -20,6 +22,9 @@ namespace ProcessList_WPFApp
     // The total amount of CPU time spent on this process.
     // Number of streams.
     // The number of copies of a process of this type (if you have a running five notebooks, five should appear)
+
+    //TASK 3
+    //Add the ability to terminate the selected process to the second task.
 
     public partial class MainWindow : Window
     {
