@@ -4,9 +4,20 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ProcessList_WPFApp"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid>
+    <Grid Margin="20">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
 
+        <TextBox Grid.Row="0" x:Name="FilePathTextBox" Margin="0 0 0 10" Style="{DynamicResource MaterialDesignFloatingHintTextBox}" Height="40" FontSize="14" materialDesign:HintAssist.Hint="File Path"/>
+        <TextBox Grid.Row="1" x:Name="SearchWordTextBox" Margin="0 0 0 10" Style="{DynamicResource MaterialDesignFloatingHintTextBox}" Height="40" FontSize="14" materialDesign:HintAssist.Hint="Search Word"/>
+        <Button Grid.Row="2" Content="Search" Click="SearchButton_Click" Height="40" FontSize="16" Background="#007ACC" Foreground="White"/>
+        <Label Grid.Row="3" x:Name="ResultLabel" Content="Result: " FontSize="16"/>
     </Grid>
 </Window>
