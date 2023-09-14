@@ -7,6 +7,13 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-
+        <TextBlock Text="Enter Numbers:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,10,0,0"/>
+        <TextBox x:Name="number1TextBox" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,30,0,0" Width="100"/>
+        <TextBox x:Name="number2TextBox" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="120,30,0,0" Width="100"/>
+        <TextBlock Text="Enter Operation:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,60,0,0"/>
+        <TextBox x:Name="operationTextBox" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,80,0,0" Width="100"/>
+        <Button Content="Calculate" Click="LaunchProcess_Click" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,110,0,0"/>
+        <TextBlock Text="Result:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,150,0,0"/>
+        <TextBlock x:Name="resultTextBlock" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,170,0,0"/>
     </Grid>
 </Window>
