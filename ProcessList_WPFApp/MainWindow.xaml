@@ -7,6 +7,7 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-
+        <Button Content="Launch Child Process" Click="LaunchProcess_Click" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <Label Content="Exit Code: " HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="0 0 0 20" Name="exitCodeLabel"/>
     </Grid>
 </Window>
