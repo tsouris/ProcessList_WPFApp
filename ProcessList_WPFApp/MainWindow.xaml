@@ -7,6 +7,9 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-
+        <Button Content="Launch Child Process" Click="LaunchProcess_Click" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <RadioButton Content="Wait for Exit" GroupName="Options" IsChecked="True" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="20 0 0 10" Name="waitRadioButton"/>
+        <RadioButton Content="Forcefully Terminate" GroupName="Options" HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="0 0 20 10" Name="terminateRadioButton"/>
+        <Label Content="Exit Code: " HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="0 0 0 10" Name="exitCodeLabel"/>
     </Grid>
 </Window>
