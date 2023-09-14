@@ -5,8 +5,11 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ProcessList_WPFApp"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
-
+        Title="MainWindow" Height="300" Width="200">
+    <Grid Background="#F2F2F2">
+        <Button Content="Launch Notepad" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="20,20,0,0" Padding="10" Width="150" Click="LaunchNotepad_Click"/>
+        <Button Content="Launch Calculator" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="20,80,0,0" Padding="10" Width="150" Click="LaunchCalculator_Click"/>
+        <Button Content="Launch Paint" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="20,140,0,0" Padding="10" Width="150" Click="LaunchPaint_Click"/>
+        <Button Content="Launch Spotify" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="20,200,0,0" Padding="10" Width="150" Click="LaunchSpotify_Click"/>
     </Grid>
 </Window>
